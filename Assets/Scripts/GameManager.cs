@@ -60,6 +60,7 @@ public class GameManager : MonoBehaviour {
     XmlNode GreenHeroLvl;
     XmlNode BlackHero;
     XmlNode AssasinHero;
+    XmlNode AVGDMG;
 
     void LoadDataFromXMLFile()
     {
@@ -70,6 +71,8 @@ public class GameManager : MonoBehaviour {
         GreenHeroLvl = gamedata.DocumentElement.SelectSingleNode("GreenHeroLvl");
         BlackHero = gamedata.DocumentElement.SelectSingleNode("BlackHero");
         AssasinHero = gamedata.DocumentElement.SelectSingleNode("AssasinHero");
+        AVGDMG = gamedata.DocumentElement.SelectSingleNode("AVGDMG");
+        Debug.Log("User last logged was in " + AVGDMG.InnerText);
         UsernameTxt.text = Username.InnerText;
         money = Convert.ToInt32(Money.InnerText);
         stage = Convert.ToInt32(StageXML.InnerText);
@@ -77,6 +80,7 @@ public class GameManager : MonoBehaviour {
         HeroesManager.GreenHero.lvl = Convert.ToInt32(GreenHeroLvl.InnerText);
         HeroesManager.BlackHero.lvl = Convert.ToInt32(BlackHero.InnerText);
         HeroesManager.AssasinHero.lvl = Convert.ToInt32(AssasinHero.InnerText);
+        HeroesManager.AverageDMGperSecond = Convert.ToInt32(AVGDMG.InnerText);
         datelastlog = Convert.ToDateTime(LastloggedTime.InnerText);
         Debug.Log("User last logged was in " + datelastlog);
     }
@@ -96,11 +100,13 @@ public class GameManager : MonoBehaviour {
         Credits = false;
         options.SetActive(false);
         CreditsPanel.SetActive(false);
-        InvokeRepeating("MakeDamage", 0, 1f);
         HpText.text = HouseHP.ToString("0");
         HpFullHp.text = FullHouseHP.ToString("0");
         Debug.Log(stage+" "+HouseHP.ToString("0"));
         moneyText.text = money.ToString();
+        HouseHP = stage * 25;
+        FullHouseHP = stage * 25;
+        InvokeRepeating("MakeDamage", 0, 1f);
     }
     public void FindTresure()
     {
@@ -131,7 +137,7 @@ public class GameManager : MonoBehaviour {
     {
         HouseHP -= HeroesManager.AverageDMGperSecond;
         HpText.text = HouseHP.ToString("0");
-        if (HouseHP == 0 || HouseHP < 0)
+        if (HouseHP == 0 || HouseHP < 0 )
         {
             HouseHP = 0;
             HpText.text = HouseHP.ToString("0");
@@ -249,6 +255,7 @@ public class GameManager : MonoBehaviour {
         AssasinHero.InnerText = HeroesManager.AssasinHero.lvl.ToString();
         BlackHero.InnerText = HeroesManager.BlackHero.lvl.ToString();
         GreenHeroLvl.InnerText = HeroesManager.GreenHero.lvl.ToString();
+        AVGDMG.InnerText = HeroesManager.AverageDMGperSecond.ToString();
         LastloggedTime.InnerText = DateTime.Now.ToString();
         Debug.Log("Data Saved " + Username.InnerText + " " + Money.InnerText + " " + StageXML.InnerText + " " + AssasinHero.InnerText + " " + BlackHero.InnerText + " " + GreenHeroLvl.InnerText + " " + LastloggedTime.InnerText);
         gamedata.Save(datapath);

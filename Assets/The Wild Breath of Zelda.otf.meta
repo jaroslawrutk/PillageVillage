@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: d7b5103222cce9e4398f21ddb557cd89
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: The Wild Breath of Zelda
+  fontNames:
+  - The Wild Breath of Zelda
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 8c5eed2c3250cff49992e940c63be23b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

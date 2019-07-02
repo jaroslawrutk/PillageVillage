@@ -109,6 +109,10 @@ public class MenuController : MonoBehaviour {
         XmlNode AssasinHero = gamedata.CreateElement("AssasinHero");
         AssasinHero.InnerText = "0";
         GameUsersNode.AppendChild(AssasinHero);
+        //AVGdmg
+        XmlNode AvgDMG = gamedata.CreateElement("AVGDMG");
+        AvgDMG.InnerText = "0";
+        GameUsersNode.AppendChild(AvgDMG);
 
         gamedata.Save(datapath);
     }

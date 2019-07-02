@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{57A2AAD0-00D3-BB5D-7748-799525C0A2AA}</ProjectGuid>
+    <ProjectGuid>{853F8D57-8419-8AC3-A900-5E50E250A046}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -67,46 +67,34 @@
     <Compile Include="Assets\Scripts\HeroesManager.cs" />
     <Compile Include="Assets\Scripts\MenuController.cs" />
     <Compile Include="Assets\Scripts\MusiscScript.cs" />
-    <None Include="Assets\craftpix-489311-2d-fantasy-woman-warrior-free-sprite-sheets\License.txt" />
-    <None Include="Assets\craftpix-489311-2d-fantasy-woman-warrior-free-sprite-sheets\TXT\license.txt" />
     <None Include="Assets\UI\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\UI\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\craftpix-062999-2d-fantasy-knight-free-sprite-sheets(2)\_TXT\LICENSES.txt" />
-    <None Include="Assets\craftpix-489311-2d-fantasy-woman-warrior-free-sprite-sheets\icons\license.txt" />
-    <None Include="Assets\craftpix-062999-2d-fantasy-knight-free-sprite-sheets(2)\_TXT\readme.txt" />
-    <None Include="Assets\craftpix-062999-2d-fantasy-knight-free-sprite-sheets(2)\_TXT\Information.txt" />
     <None Include="Assets\UI\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\craftpix-489311-2d-fantasy-woman-warrior-free-sprite-sheets\_TXT\readme.txt" />
     <None Include="Assets\UI\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\UI\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\UI\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\UI\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\craftpix-489311-2d-fantasy-woman-warrior-free-sprite-sheets\readme.txt" />
     <None Include="Assets\UI\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\craftpix-489311-2d-fantasy-woman-warrior-free-sprite-sheets\_TXT\Information.txt" />
-    <None Include="Assets\craftpix-489311-2d-fantasy-woman-warrior-free-sprite-sheets\superpowers-asset-packs-master\LICENSE.txt" />
     <None Include="Assets\UI\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\UI\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\UI\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\craftpix-489311-2d-fantasy-woman-warrior-free-sprite-sheets\_TXT\LICENSES.txt" />
     <None Include="Assets\UI\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\UI\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\UI\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\UI\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\UI\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
-    <None Include="Assets\craftpix-489311-2d-fantasy-woman-warrior-free-sprite-sheets\TXT\readme.txt" />
     <None Include="Assets\UI\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>D:/Repozytoria/PillageVillage1/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>D:/Repozytoria/PillageVillage1/PillageVillage/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Repozytoria/PillageVillage1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Repozytoria/PillageVillage1/PillageVillage/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/Repozytoria/PillageVillage1/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/Repozytoria/PillageVillage1/PillageVillage/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Repozytoria/PillageVillage1/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Repozytoria/PillageVillage1/PillageVillage/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
